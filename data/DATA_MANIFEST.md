@@ -70,8 +70,8 @@
 ## Citation
 
 ```
-Johnson, A. E. W., Bulgarelli, L., Shen, L., Gayles, A., Shammout, A., Horng, S.,
-Pollard, T. J., Huo, S., Bhanu Mohan, M., Mohan, B., Bhanu, T., Jafari, M., Le, W., Mark, R. G. (2023).
+Johnson, A. E. W., Bulgarelli, L., Shen, L., Gayles, A., Shammout, A., Horng, S., 
+Pollard, T. J., Hao, S., Moody, B., Gow, B., Lehman, L. H., Celi, L. A., & Mark, R. G. (2023).
 MIMIC-IV, a freely accessible electronic health record dataset.
 Scientific Data, 10(1). https://doi.org/10.1038/s41597-022-01899-x
 
