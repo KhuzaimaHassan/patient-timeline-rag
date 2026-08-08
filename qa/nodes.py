@@ -142,8 +142,10 @@ def generate_answer(state: GraphState) -> Dict:
     ]
     
     response = chat.invoke(messages)
+    content = response.content
+    abstained = "I cannot find evidence for that in the structured record" in content
     
-    return {"answer": response.content, "abstained": False}
+    return {"answer": content, "abstained": abstained}
 
 
 def abstain(state: GraphState) -> Dict:
