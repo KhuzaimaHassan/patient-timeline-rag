@@ -1,81 +1,6 @@
 [
   {
     "case": {
-      "question": "Did patient 10027445 ever get diagnosed with Unspecified essential hypertension?",
-      "subject_id": 10027445,
-      "expected_answer_facts": [
-        "Unspecified essential hypertension"
-      ],
-      "expected_citations": [
-        "hosp/diagnoses_icd | row=10027445-27488741-14 | subject_id=10027445"
-      ],
-      "should_abstain": false
-    },
-    "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
-    },
-    "metrics": {
-      "structured_fact_accuracy": 0.0,
-      "temporal_order_accuracy": null,
-      "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
-    }
-  },
-  {
-    "case": {
-      "question": "Was patient 10022017 prescribed Docusate Sodium?",
-      "subject_id": 10022017,
-      "expected_answer_facts": [
-        "Docusate Sodium"
-      ],
-      "expected_citations": [
-        "hosp/prescriptions | row=6924 | subject_id=10022017"
-      ],
-      "should_abstain": false
-    },
-    "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
-    },
-    "metrics": {
-      "structured_fact_accuracy": 0.0,
-      "temporal_order_accuracy": null,
-      "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
-    }
-  },
-  {
-    "case": {
-      "question": "Was patient 10005909 prescribed ClonazePAM?",
-      "subject_id": 10005909,
-      "expected_answer_facts": [
-        "ClonazePAM"
-      ],
-      "expected_citations": [
-        "hosp/prescriptions | row=954 | subject_id=10005909"
-      ],
-      "should_abstain": false
-    },
-    "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
-    },
-    "metrics": {
-      "structured_fact_accuracy": 0.0,
-      "temporal_order_accuracy": null,
-      "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
-    }
-  },
-  {
-    "case": {
       "question": "Was patient 10003400 prescribed Furosemide?",
       "subject_id": 10003400,
       "expected_answer_facts": [
@@ -87,35 +12,10 @@
       "should_abstain": false
     },
     "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "answer": "I cannot find evidence for that in the structured record. \n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
       "citations": [],
       "abstained": true,
-      "confidence": 0.0
-    },
-    "metrics": {
-      "structured_fact_accuracy": 0.0,
-      "temporal_order_accuracy": null,
-      "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
-    }
-  },
-  {
-    "case": {
-      "question": "Was patient 10029291 prescribed Sodium Chloride 0.9%?",
-      "subject_id": 10029291,
-      "expected_answer_facts": [
-        "Sodium Chloride 0.9%"
-      ],
-      "expected_citations": [
-        "hosp/prescriptions | row=17047 | subject_id=10029291"
-      ],
-      "should_abstain": false
-    },
-    "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
+      "confidence": 0.1
     },
     "metrics": {
       "structured_fact_accuracy": 0.0,
@@ -139,16 +39,87 @@
       "should_abstain": false
     },
     "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
+      "answer": "The first admission for patient 10014354 was on 2148-05-10 [hosp/admissions | row=22508257 | subject_id=10014354 | t=2148-05-10 23:29:00] and the most recent admission was on 2150-04-30 [hosp/admissions | row=26228185 | subject_id=10014354 | t=2150-04-30 20:19:00]. \n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10014354-22741225-4",
+          "subject_id": 10014354,
+          "timestamp": "2146-10-12 18:20:00",
+          "citation": "hosp/diagnoses_icd | row=10014354-22741225-4 | subject_id=10014354 | t=2146-10-12 18:20:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10014354-29757856-19",
+          "subject_id": 10014354,
+          "timestamp": "2150-04-15 18:00:00",
+          "citation": "hosp/diagnoses_icd | row=10014354-29757856-19 | subject_id=10014354 | t=2150-04-15 18:00:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10014354-26013492-22",
+          "subject_id": 10014354,
+          "timestamp": "2147-11-16 15:00:00",
+          "citation": "hosp/diagnoses_icd | row=10014354-26013492-22 | subject_id=10014354 | t=2147-11-16 15:00:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10014354-26173805-5",
+          "subject_id": 10014354,
+          "timestamp": "2149-09-18 10:45:00",
+          "citation": "hosp/diagnoses_icd | row=10014354-26173805-5 | subject_id=10014354 | t=2149-09-18 10:45:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10014354-26486158-20",
+          "subject_id": 10014354,
+          "timestamp": "2148-09-08 12:00:00",
+          "citation": "hosp/diagnoses_icd | row=10014354-26486158-20 | subject_id=10014354 | t=2148-09-08 12:00:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "24980601",
+          "subject_id": 10014354,
+          "timestamp": "2150-02-04 20:12:00",
+          "citation": "hosp/admissions | row=24980601 | subject_id=10014354 | t=2150-02-04 20:12:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "26228185",
+          "subject_id": 10014354,
+          "timestamp": "2150-04-30 20:19:00",
+          "citation": "hosp/admissions | row=26228185 | subject_id=10014354 | t=2150-04-30 20:19:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "29600294",
+          "subject_id": 10014354,
+          "timestamp": "2148-08-14 22:57:00",
+          "citation": "hosp/admissions | row=29600294 | subject_id=10014354 | t=2148-08-14 22:57:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "22508257",
+          "subject_id": 10014354,
+          "timestamp": "2148-05-10 23:29:00",
+          "citation": "hosp/admissions | row=22508257 | subject_id=10014354 | t=2148-05-10 23:29:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "29780751",
+          "subject_id": 10014354,
+          "timestamp": "2147-11-26 00:39:00",
+          "citation": "hosp/admissions | row=29780751 | subject_id=10014354 | t=2147-11-26 00:39:00"
+        }
+      ],
+      "abstained": false,
+      "confidence": 0.72862229347229
     },
     "metrics": {
       "structured_fact_accuracy": 0.0,
       "temporal_order_accuracy": 0.0,
       "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
+      "abstention_accuracy": 1.0
     }
   },
   {
@@ -166,16 +137,87 @@
       "should_abstain": false
     },
     "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
+      "answer": "The first admission for patient 10039708 occurred on 2140-09-25 [hosp/admissions | row=26793610 | subject_id=10039708 | t=2140-09-25 04:17:00], and the most recent admission occurred on 2144-01-19 [hosp/admissions | row=29488258 | subject_id=10039708 | t=2144-01-19 12:07:00]. \n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10039708-28258130-37",
+          "subject_id": 10039708,
+          "timestamp": "2140-02-26 18:15:00",
+          "citation": "hosp/diagnoses_icd | row=10039708-28258130-37 | subject_id=10039708 | t=2140-02-26 18:15:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10039708-28258130-38",
+          "subject_id": 10039708,
+          "timestamp": "2140-02-26 18:15:00",
+          "citation": "hosp/diagnoses_icd | row=10039708-28258130-38 | subject_id=10039708 | t=2140-02-26 18:15:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10039708-20093566-28",
+          "subject_id": 10039708,
+          "timestamp": "2143-09-30 20:00:00",
+          "citation": "hosp/diagnoses_icd | row=10039708-20093566-28 | subject_id=10039708 | t=2143-09-30 20:00:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10039708-29488258-13",
+          "subject_id": 10039708,
+          "timestamp": "2144-01-21 21:20:00",
+          "citation": "hosp/diagnoses_icd | row=10039708-29488258-13 | subject_id=10039708 | t=2144-01-21 21:20:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10039708-28258130-5",
+          "subject_id": 10039708,
+          "timestamp": "2140-02-26 18:15:00",
+          "citation": "hosp/diagnoses_icd | row=10039708-28258130-5 | subject_id=10039708 | t=2140-02-26 18:15:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "22999601",
+          "subject_id": 10039708,
+          "timestamp": "2142-05-15 17:14:00",
+          "citation": "hosp/admissions | row=22999601 | subject_id=10039708 | t=2142-05-15 17:14:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "24928679",
+          "subject_id": 10039708,
+          "timestamp": "2143-09-19 18:36:00",
+          "citation": "hosp/admissions | row=24928679 | subject_id=10039708 | t=2143-09-19 18:36:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "20093566",
+          "subject_id": 10039708,
+          "timestamp": "2143-09-26 18:24:00",
+          "citation": "hosp/admissions | row=20093566 | subject_id=10039708 | t=2143-09-26 18:24:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "26793610",
+          "subject_id": 10039708,
+          "timestamp": "2140-09-25 04:17:00",
+          "citation": "hosp/admissions | row=26793610 | subject_id=10039708 | t=2140-09-25 04:17:00"
+        },
+        {
+          "source_table": "hosp/admissions",
+          "source_row_id": "29488258",
+          "subject_id": 10039708,
+          "timestamp": "2144-01-19 12:07:00",
+          "citation": "hosp/admissions | row=29488258 | subject_id=10039708 | t=2144-01-19 12:07:00"
+        }
+      ],
+      "abstained": false,
+      "confidence": 0.7224467158317566
     },
     "metrics": {
-      "structured_fact_accuracy": 0.0,
+      "structured_fact_accuracy": 0.5,
       "temporal_order_accuracy": 0.0,
       "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
+      "abstention_accuracy": 1.0
     }
   },
   {
@@ -193,16 +235,52 @@
       "should_abstain": false
     },
     "response": {
-      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
-      "citations": [],
-      "abstained": true,
-      "confidence": 0.0
+      "answer": "The earliest admission date for patient 10037928 is 2177-07-14 [icu/chartevents | row=31552399-224028-2177-07-14 21:48:00 | subject_id=10037928 | t=2177-07-14 21:48:00], and the most recent admission date is 2183-08-04 [hosp/diagnoses_icd | row=10037928-22228639-1 | subject_id=10037928 | t=2183-08-04 16:07:00]. \n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10037928-23721604-18",
+          "subject_id": 10037928,
+          "timestamp": "2179-04-04 19:40:00",
+          "citation": "hosp/diagnoses_icd | row=10037928-23721604-18 | subject_id=10037928 | t=2179-04-04 19:40:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10037928-22228639-1",
+          "subject_id": 10037928,
+          "timestamp": "2183-08-04 16:07:00",
+          "citation": "hosp/diagnoses_icd | row=10037928-22228639-1 | subject_id=10037928 | t=2183-08-04 16:07:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10037928-22228639-2",
+          "subject_id": 10037928,
+          "timestamp": "2183-08-04 16:07:00",
+          "citation": "hosp/diagnoses_icd | row=10037928-22228639-2 | subject_id=10037928 | t=2183-08-04 16:07:00"
+        },
+        {
+          "source_table": "icu/chartevents",
+          "source_row_id": "31552399-224028-2177-07-14 21:48:00",
+          "subject_id": 10037928,
+          "timestamp": "2177-07-14 21:48:00",
+          "citation": "icu/chartevents | row=31552399-224028-2177-07-14 21:48:00 | subject_id=10037928 | t=2177-07-14 21:48:00"
+        },
+        {
+          "source_table": "hosp/diagnoses_icd",
+          "source_row_id": "10037928-22490490-8",
+          "subject_id": 10037928,
+          "timestamp": "2177-07-24 13:33:00",
+          "citation": "hosp/diagnoses_icd | row=10037928-22490490-8 | subject_id=10037928 | t=2177-07-24 13:33:00"
+        }
+      ],
+      "abstained": false,
+      "confidence": 0.1
     },
     "metrics": {
-      "structured_fact_accuracy": 0.0,
+      "structured_fact_accuracy": 0.5,
       "temporal_order_accuracy": 0.0,
       "source_provenance_coverage": 0.0,
-      "abstention_accuracy": 0.0
+      "abstention_accuracy": 1.0
     }
   }
 ]
