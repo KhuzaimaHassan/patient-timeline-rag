@@ -59,6 +59,16 @@ def get_llm():
 
 # ── Nodes ────────────────────────────────────────────────────────────────────
 
+_tables = None
+
+def get_tables():
+    global _tables
+    if _tables is None:
+        from data.ingest import run_ingestion
+        data_dir = os.getenv("MIMIC_DATA_DIR", "data/mimic-iv-demo")
+        _tables, _, _ = run_ingestion(data_dir)
+    return _tables
+
 def retrieve(state: GraphState) -> Dict:
     """Retrieve chunks using both FAISS and BM25, then merge/dedupe."""
     query = state["query"]
@@ -91,11 +101,57 @@ def retrieve(state: GraphState) -> Dict:
     
     # Attach the scores to the chunks for the next node
     final_chunks = []
+    
+    # Temporal-aware retrieval logic
+    temporal_first = ["first", "earliest", "initial"]
+    temporal_last = ["most recent", "latest", "last"]
+    
+    has_first = any(k in query.lower() for k in temporal_first)
+    has_last = any(k in query.lower() for k in temporal_last)
+    
+    event_keywords = {
+        "admission": ["admission", "admitted"],
+        "diagnosis": ["diagnosis", "diagnosed"],
+        "lab": ["lab", "test", "result"],
+        "medication": ["medication", "prescribed", "drug"]
+    }
+    
+    target_event_types = []
+    for etype, kws in event_keywords.items():
+        if any(kw in query.lower() for kw in kws):
+            target_event_types.append(etype)
+            
+    if (has_first or has_last) and target_event_types and subject_id is not None:
+        from timeline.builder import build_timeline
+        from retrieval.chunker import event_to_chunk
+        
+        tables = get_tables()
+        events = build_timeline(tables, subject_id=subject_id)
+        matching_events = [e for e in events if e.event_type in target_event_types or (e.event_type == "icu_stay" and "admission" in target_event_types)]
+        
+        # known timestamps only
+        matching_events = [e for e in matching_events if e.timestamp != "unknown"]
+        
+        if matching_events:
+            temporal_chunks = []
+            if has_first:
+                temporal_chunks.append(event_to_chunk(matching_events[0]))
+            if has_last:
+                temporal_chunks.append(event_to_chunk(matching_events[-1]))
+                
+            for c in temporal_chunks:
+                c.metadata["_faiss_score"] = 1.0  # hardcode high score to boost confidence
+                c.metadata["_bm25_score"] = 10.0
+                final_chunks.append(c)
+
+    # Add standard retrieved chunks
     for item in sorted_items[:top_k * 2]:  # Keep union top K
         chunk = item["chunk"]
         chunk.metadata["_faiss_score"] = item["faiss_score"]
         chunk.metadata["_bm25_score"] = item["bm25_score"]
-        final_chunks.append(chunk)
+        # dedupe
+        if not any(c.chunk_id == chunk.chunk_id for c in final_chunks):
+            final_chunks.append(chunk)
 
     return {"retrieved_chunks": final_chunks}
 

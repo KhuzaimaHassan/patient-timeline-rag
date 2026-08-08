@@ -6,7 +6,7 @@
       "Long-term (current) use of anticoagulants"
     ],
     "expected_citations": [
-      "hosp/diagnoses_icd | row=10018081-21027282-24 | subject_id=10018081"
+      "hosp/diagnoses_icd | row=10018081-21027282-24 | subject_id=10018081 | t=unknown"
     ],
     "should_abstain": false
   },
@@ -17,7 +17,7 @@
       "Peritoneal adhesions (postprocedural) (postinfection)"
     ],
     "expected_citations": [
-      "hosp/diagnoses_icd | row=10005866-20364112-16 | subject_id=10005866"
+      "hosp/diagnoses_icd | row=10005866-20364112-16 | subject_id=10005866 | t=unknown"
     ],
     "should_abstain": false
   },
@@ -35,7 +35,7 @@
       "Long term (current) use of insulin"
     ],
     "expected_citations": [
-      "hosp/diagnoses_icd | row=10015860-22416954-12 | subject_id=10015860"
+      "hosp/diagnoses_icd | row=10015860-22416954-12 | subject_id=10015860 | t=unknown"
     ],
     "should_abstain": false
   },
@@ -47,8 +47,8 @@
       "2193-11-23"
     ],
     "expected_citations": [
-      "hosp/admissions | row=86 | subject_id=10015860",
-      "hosp/admissions | row=211 | subject_id=10015860"
+      "hosp/admissions | row=25085565 | subject_id=10015860 | t=2186-09-15 16:12:00",
+      "hosp/admissions | row=28196804 | subject_id=10015860 | t=2193-11-23 19:15:00"
     ],
     "should_abstain": false
   },
@@ -59,7 +59,7 @@
       "Encounter for palliative care"
     ],
     "expected_citations": [
-      "hosp/diagnoses_icd | row=10038081-20755971-36 | subject_id=10038081"
+      "hosp/diagnoses_icd | row=10038081-20755971-36 | subject_id=10038081 | t=unknown"
     ],
     "should_abstain": false
   },
@@ -70,7 +70,7 @@
       "Bag"
     ],
     "expected_citations": [
-      "hosp/prescriptions | row=682 | subject_id=10021487"
+      "hosp/prescriptions | row=25577649 | subject_id=10021487 | t=2116-12-03 14:00:00"
     ],
     "should_abstain": false
   },
@@ -82,8 +82,8 @@
       "2201-03-23"
     ],
     "expected_citations": [
-      "hosp/admissions | row=193 | subject_id=10002930",
-      "hosp/admissions | row=195 | subject_id=10002930"
+      "hosp/admissions | row=22380825 | subject_id=10002930 | t=2193-08-05 06:18:00",
+      "hosp/admissions | row=20282368 | subject_id=10002930 | t=2201-03-23 19:15:00"
     ],
     "should_abstain": false
   },
