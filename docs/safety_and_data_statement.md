@@ -16,5 +16,5 @@ The data used in this project is sourced from the MIMIC-IV Demo v2.2 and is gove
 Johnson, A. E. W., Bulgarelli, L., Shen, L., Gayles, A., Shammout, A., Horng, S., 
 Pollard, T. J., Hao, S., Moody, B., Gow, B., Lehman, L. H., Celi, L. A., & Mark, R. G. (2023).
 MIMIC-IV, a freely accessible electronic health record dataset.
-Scientific Data, 10(1). https://doi.org/10.13039/100000001
+Scientific Data, 10(1). https://doi.org/10.1038/s41597-022-01899-x
 ```

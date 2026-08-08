@@ -1,5 +1,8 @@
 # ChronoMed: Structured Patient Timeline & Evidence Retrieval
 
+> **⚠️ NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**
+> For full details, see the [Safety and Data Statement](docs/safety_and_data_statement.md).
+
 ChronoMed is a grounded RAG QA pipeline built for querying patient records over the MIMIC-IV Demo v2.2 dataset. It synthesizes fragmented clinical data (admissions, diagnoses, labs, and medications) into unified chronological timelines and strictly grounds all LLM answers to verifiable citations, explicitly self-abstaining when unsupported.
 
 ## Architecture
