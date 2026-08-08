@@ -1,0 +1,208 @@
+[
+  {
+    "case": {
+      "question": "Did patient 10027445 ever get diagnosed with Unspecified essential hypertension?",
+      "subject_id": 10027445,
+      "expected_answer_facts": [
+        "Unspecified essential hypertension"
+      ],
+      "expected_citations": [
+        "hosp/diagnoses_icd | row=10027445-27488741-14 | subject_id=10027445"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": null,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "Was patient 10022017 prescribed Docusate Sodium?",
+      "subject_id": 10022017,
+      "expected_answer_facts": [
+        "Docusate Sodium"
+      ],
+      "expected_citations": [
+        "hosp/prescriptions | row=6924 | subject_id=10022017"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": null,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "Was patient 10005909 prescribed ClonazePAM?",
+      "subject_id": 10005909,
+      "expected_answer_facts": [
+        "ClonazePAM"
+      ],
+      "expected_citations": [
+        "hosp/prescriptions | row=954 | subject_id=10005909"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": null,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "Was patient 10003400 prescribed Furosemide?",
+      "subject_id": 10003400,
+      "expected_answer_facts": [
+        "Furosemide"
+      ],
+      "expected_citations": [
+        "hosp/prescriptions | row=5170 | subject_id=10003400"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": null,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "Was patient 10029291 prescribed Sodium Chloride 0.9%?",
+      "subject_id": 10029291,
+      "expected_answer_facts": [
+        "Sodium Chloride 0.9%"
+      ],
+      "expected_citations": [
+        "hosp/prescriptions | row=17047 | subject_id=10029291"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": null,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "For patient 10014354, what was the date of their first admission compared to their most recent admission?",
+      "subject_id": 10014354,
+      "expected_answer_facts": [
+        "2146-10-08",
+        "2150-05-09"
+      ],
+      "expected_citations": [
+        "hosp/admissions | row=95 | subject_id=10014354",
+        "hosp/admissions | row=94 | subject_id=10014354"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": 0.0,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "For patient 10039708, what was the date of their first admission compared to their most recent admission?",
+      "subject_id": 10039708,
+      "expected_answer_facts": [
+        "2138-10-30",
+        "2144-01-19"
+      ],
+      "expected_citations": [
+        "hosp/admissions | row=101 | subject_id=10039708",
+        "hosp/admissions | row=221 | subject_id=10039708"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": 0.0,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  },
+  {
+    "case": {
+      "question": "For patient 10037928, what was the date of their first admission compared to their most recent admission?",
+      "subject_id": 10037928,
+      "expected_answer_facts": [
+        "2175-10-26",
+        "2183-08-04"
+      ],
+      "expected_citations": [
+        "hosp/admissions | row=186 | subject_id=10037928",
+        "hosp/admissions | row=185 | subject_id=10037928"
+      ],
+      "should_abstain": false
+    },
+    "response": {
+      "answer": "I cannot find evidence for that in the structured record.\n\n**NOTICE: This application is a prototype intended for research and educational purposes only. It is not intended for clinical decision-making, diagnosis, or treatment.**",
+      "citations": [],
+      "abstained": true,
+      "confidence": 0.0
+    },
+    "metrics": {
+      "structured_fact_accuracy": 0.0,
+      "temporal_order_accuracy": 0.0,
+      "source_provenance_coverage": 0.0,
+      "abstention_accuracy": 0.0
+    }
+  }
+]

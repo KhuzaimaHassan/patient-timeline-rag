@@ -24,15 +24,12 @@ from qa.nodes import (
 def decide_abstain(state: GraphState) -> str:
     """
     Conditional routing function.
-    If confidence < threshold AND no strong BM25 hit, route to abstain.
+    Hard-abstain ONLY if retrieved_chunks is empty.
+    Otherwise, trust the LLM's grounding prompt to abstain if needed.
     """
-    threshold = float(os.getenv("ABSTENTION_THRESHOLD", "0.3"))
     chunks = state.get("retrieved_chunks", [])
     
-    max_bm25 = max([c.metadata.get("_bm25_score", 0.0) for c in chunks], default=0.0)
-    
-    # If FAISS confidence is below threshold OR no exact keyword match (BM25 < 5.0)
-    if state["confidence"] < threshold or max_bm25 < 5.0:
+    if len(chunks) == 0:
         return "abstain"
     return "generate_answer"
 

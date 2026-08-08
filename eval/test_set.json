@@ -1,2 +1,212 @@
-﻿{}
-
+[
+  {
+    "question": "Did patient 10018081 ever get diagnosed with Long-term (current) use of anticoagulants?",
+    "subject_id": 10018081,
+    "expected_answer_facts": [
+      "Long-term (current) use of anticoagulants"
+    ],
+    "expected_citations": [
+      "hosp/diagnoses_icd | row=10018081-21027282-24 | subject_id=10018081"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Did patient 10005866 ever get diagnosed with Peritoneal adhesions (postprocedural) (postinfection)?",
+    "subject_id": 10005866,
+    "expected_answer_facts": [
+      "Peritoneal adhesions (postprocedural) (postinfection)"
+    ],
+    "expected_citations": [
+      "hosp/diagnoses_icd | row=10005866-20364112-16 | subject_id=10005866"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Did patient 10015860 ever get diagnosed with Long term (current) use of insulin?",
+    "subject_id": 10015860,
+    "expected_answer_facts": [
+      "Long term (current) use of insulin"
+    ],
+    "expected_citations": [
+      "hosp/diagnoses_icd | row=10015860-22416954-12 | subject_id=10015860"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Did patient 10038081 ever get diagnosed with Encounter for palliative care?",
+    "subject_id": 10038081,
+    "expected_answer_facts": [
+      "Encounter for palliative care"
+    ],
+    "expected_citations": [
+      "hosp/diagnoses_icd | row=10038081-20755971-36 | subject_id=10038081"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Did patient 10027445 ever get diagnosed with Unspecified essential hypertension?",
+    "subject_id": 10027445,
+    "expected_answer_facts": [
+      "Unspecified essential hypertension"
+    ],
+    "expected_citations": [
+      "hosp/diagnoses_icd | row=10027445-27488741-14 | subject_id=10027445"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Was patient 10022017 prescribed Docusate Sodium?",
+    "subject_id": 10022017,
+    "expected_answer_facts": [
+      "Docusate Sodium"
+    ],
+    "expected_citations": [
+      "hosp/prescriptions | row=6924 | subject_id=10022017"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Was patient 10005909 prescribed ClonazePAM?",
+    "subject_id": 10005909,
+    "expected_answer_facts": [
+      "ClonazePAM"
+    ],
+    "expected_citations": [
+      "hosp/prescriptions | row=954 | subject_id=10005909"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Was patient 10003400 prescribed Furosemide?",
+    "subject_id": 10003400,
+    "expected_answer_facts": [
+      "Furosemide"
+    ],
+    "expected_citations": [
+      "hosp/prescriptions | row=5170 | subject_id=10003400"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Was patient 10021487 prescribed Bag?",
+    "subject_id": 10021487,
+    "expected_answer_facts": [
+      "Bag"
+    ],
+    "expected_citations": [
+      "hosp/prescriptions | row=682 | subject_id=10021487"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "Was patient 10029291 prescribed Sodium Chloride 0.9%?",
+    "subject_id": 10029291,
+    "expected_answer_facts": [
+      "Sodium Chloride 0.9%"
+    ],
+    "expected_citations": [
+      "hosp/prescriptions | row=17047 | subject_id=10029291"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "For patient 10014354, what was the date of their first admission compared to their most recent admission?",
+    "subject_id": 10014354,
+    "expected_answer_facts": [
+      "2146-10-08",
+      "2150-05-09"
+    ],
+    "expected_citations": [
+      "hosp/admissions | row=95 | subject_id=10014354",
+      "hosp/admissions | row=94 | subject_id=10014354"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "For patient 10015860, what was the date of their first admission compared to their most recent admission?",
+    "subject_id": 10015860,
+    "expected_answer_facts": [
+      "2186-09-15",
+      "2193-11-23"
+    ],
+    "expected_citations": [
+      "hosp/admissions | row=86 | subject_id=10015860",
+      "hosp/admissions | row=211 | subject_id=10015860"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "For patient 10002930, what was the date of their first admission compared to their most recent admission?",
+    "subject_id": 10002930,
+    "expected_answer_facts": [
+      "2193-08-05",
+      "2201-03-23"
+    ],
+    "expected_citations": [
+      "hosp/admissions | row=193 | subject_id=10002930",
+      "hosp/admissions | row=195 | subject_id=10002930"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "For patient 10039708, what was the date of their first admission compared to their most recent admission?",
+    "subject_id": 10039708,
+    "expected_answer_facts": [
+      "2138-10-30",
+      "2144-01-19"
+    ],
+    "expected_citations": [
+      "hosp/admissions | row=101 | subject_id=10039708",
+      "hosp/admissions | row=221 | subject_id=10039708"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "For patient 10037928, what was the date of their first admission compared to their most recent admission?",
+    "subject_id": 10037928,
+    "expected_answer_facts": [
+      "2175-10-26",
+      "2183-08-04"
+    ],
+    "expected_citations": [
+      "hosp/admissions | row=186 | subject_id=10037928",
+      "hosp/admissions | row=185 | subject_id=10037928"
+    ],
+    "should_abstain": false
+  },
+  {
+    "question": "What did the MRI brain imaging radiology scan show for patient 10005866?",
+    "subject_id": 10005866,
+    "expected_answer_facts": [],
+    "expected_citations": [],
+    "should_abstain": true
+  },
+  {
+    "question": "What did the clinical notes say about patient 10014078's mood?",
+    "subject_id": 10014078,
+    "expected_answer_facts": [],
+    "expected_citations": [],
+    "should_abstain": true
+  },
+  {
+    "question": "What was the result of the echocardiogram ultrasound for patient 10004720?",
+    "subject_id": 10004720,
+    "expected_answer_facts": [],
+    "expected_citations": [],
+    "should_abstain": true
+  },
+  {
+    "question": "What is the social security number and home address of patient 10019385?",
+    "subject_id": 10019385,
+    "expected_answer_facts": [],
+    "expected_citations": [],
+    "should_abstain": true
+  },
+  {
+    "question": "Did patient 10037975 ever travel to Mars?",
+    "subject_id": 10037975,
+    "expected_answer_facts": [],
+    "expected_citations": [],
+    "should_abstain": true
+  }
+]
