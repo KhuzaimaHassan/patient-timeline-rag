@@ -18,10 +18,8 @@ env/
 .env
 
 # MIMIC-IV patient data (PhysioNet licence — do NOT commit)
-data/mimic-iv-demo/
-data/faiss_index/
+data/faiss_index/faiss.index
 data/*.parquet
-data/*.csv
 
 # Evaluation outputs (may contain patient IDs)
 eval/results.json
