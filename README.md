@@ -8,8 +8,8 @@ ChronoMed is a grounded RAG QA pipeline built for querying patient records over 
 ## The Problem
 Clinicians spend excessive time parsing fragmented patient data across admissions, labs, and medications. Finding specific chronological events (e.g., "first vs latest admission") often requires sifting through hundreds of database rows.
 
-## What We'd Improve With More Time
-While ChronoMed reliably avoids hallucinations, it suffers from over-cautious false-negative abstentions on sparse single-drug queries (like "Furosemide"). Given more time, we would improve retrieval recall tuning (e.g., query expansion) specifically for these single-drug-name searches.
+## What I'd Improve With More Time
+While ChronoMed reliably avoids hallucinations, it suffers from over-cautious false-negative abstentions on sparse single-drug queries (like "Furosemide"). Given more time, I would improve retrieval recall tuning (e.g., query expansion) specifically for these single-drug-name searches.
 
 ## Architecture
 1. **Data Ingestion**: Parses raw MIMIC-IV CSVs and standardizes events.
@@ -63,7 +63,7 @@ streamlit run app/frontend.py
 ```
 
 ## How to Evaluate
-You can automatically evaluate ChronoMed against the non-AI baseline using our evaluation harness.
+You can automatically evaluate ChronoMed against the non-AI baseline using my evaluation harness.
 ```bash
 python eval/create_test_set.py
 python eval/split.py
