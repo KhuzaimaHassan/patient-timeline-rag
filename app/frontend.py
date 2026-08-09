@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_URL = f"http://{os.getenv('API_HOST', '127.0.0.1')}:{os.getenv('API_PORT', '8000')}"
+API_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="ChronoMed MVP", layout="wide")
 
