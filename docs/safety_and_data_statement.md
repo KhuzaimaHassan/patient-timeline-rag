@@ -7,7 +7,7 @@
 This project operates strictly on the MIMIC-IV Clinical Database Demo dataset. **This is fully de-identified public demo data and contains no real Protected Health Information (PHI).** All timestamps have been date-shifted into the future, and all explicit patient identifiers have been completely removed in accordance with PhysioNet protocols.
 
 ## Licensing and Citations
-The data used in this project is sourced from the MIMIC-IV Demo v2.2 and is governed by the PhysioNet Credentialed Health Data Licence 1.5.0. 
+The data used in this project is sourced from the MIMIC-IV Demo v2.2 and is governed by the Open Data Commons Open Database License v1.0 (ODbL). 
 
 **PhysioNet Dataset (v2.2):** https://doi.org/10.13026/dp1f-ex47
 

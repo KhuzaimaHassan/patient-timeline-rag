@@ -5,6 +5,12 @@
 
 ChronoMed is a grounded RAG QA pipeline built for querying patient records over the MIMIC-IV Demo v2.2 dataset. It synthesizes fragmented clinical data (admissions, diagnoses, labs, and medications) into unified chronological timelines and strictly grounds all LLM answers to verifiable citations, explicitly self-abstaining when unsupported.
 
+## The Problem
+Clinicians spend excessive time parsing fragmented patient data across admissions, labs, and medications. Finding specific chronological events (e.g., "first vs latest admission") often requires sifting through hundreds of database rows.
+
+## What We'd Improve With More Time
+While ChronoMed reliably avoids hallucinations, it suffers from over-cautious false-negative abstentions on sparse single-drug queries (like "Furosemide"). Given more time, we would improve retrieval recall tuning (e.g., query expansion) specifically for these single-drug-name searches.
+
 ## Architecture
 1. **Data Ingestion**: Parses raw MIMIC-IV CSVs and standardizes events.
 2. **Timeline Builder**: Constructs chronological, patient-specific timelines.
@@ -15,7 +21,7 @@ ChronoMed is a grounded RAG QA pipeline built for querying patient records over 
 ## Setup Instructions
 
 ### 1. Prerequisites & Credentialing
-Before starting, ensure you have a PhysioNet account and have signed the Data Use Agreement for the **MIMIC-IV Clinical Database Demo**. 
+Before starting, ensure you have a free PhysioNet account (no Data Use Agreement required for the Demo dataset specifically). 
 
 ### 2. Clone and Install
 ```bash
